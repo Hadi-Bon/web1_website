@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>عن الدليل - بوابة فعالية دمشق</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+  <!-- الـ Navbar -->
+  <header class="site-header">
+    <nav id="mainNav" class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="img/logo.png" alt="DEG" class="logo">
+          <div class="brand-text">
+            <div class="deg">D&nbsp;&nbsp;E&nbsp;&nbsp;G</div>
+            <div class="site-name">بوابة فعالية دمشق</div>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+          <ul class="navbar-nav gap-3 text-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+          <button id="modeToggle" class="mode-toggle" title="تبديل الوضع">🌙</button>
+          <div class="lang-switch d-flex align-items-center">
+            <button class="flag-btn" data-lang="ar" id="flag-sy" title="العربية">
+              <img src="img/Flag-Syria.png" alt="العربية">
+            </button>
+            <button class="flag-btn" data-lang="en" id="flag-us" title="English">
+              <img src="img/Flag-United-States-of-America.png" alt="English">
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- صفحة عن الدليل -->
+  <section class="about-page" id="about-page">
+    <div class="container about-page__container">
+      <h1 class="about-page__title">عن دليل فعاليات دمشق</h1>
+
+      <!-- قسم نبذة عن المشروع -->
+      <div class="about-project">
+        <h2 class="about-project__title">نبذة عن المشروع</h2>
+        <p class="about-project__text">
+          بوابة فعالية دمشق (Damascus Event Gateway) هي منصة مجتمعية رائدة تهدف إلى توثيق ومشاركة الفعاليات الخيرية والتطوعية والثقافية في مدينة دمشق. 
+          نسعى من خلال هذه البوابة إلى تعزيز روح التعاون والمشاركة بين الأفراد والجمعيات، وإحياء النشاط المجتمعي في المدينة الأقدم في العالم.
+          <br><br>
+          رؤيتنا تتمثل في خلق مجتمع مترابط ينشط فيه الجميع للمساهمة في إعادة إعمار مدينتهم وتعزيز قيم التكافل والتعاون. نؤمن بأن التغيير يبدأ بخطوة، وكل فعالية هي بذرة خير تُزرع في تربة المجتمع الدمشقي الأصيل.
+        </p>
+      </div>
+
+      <!-- قسم فريق العمل -->
+      <div class="team-section">
+        <h2 class="team-section__title">فريق العمل</h2>
+        <p class="about-project__text" style="text-align: center; margin-bottom: 30px;">
+          فريق شغوف يعمل بجد لتحقيق رؤية مجتمع نشط ومترابط في دمشق
+        </p>
+        
+        <div class="team-grid">
+          <!-- عضو الفريق 1 -->
+          <div class="team-card">
+            <div class="team-card__image-container">
+              <img src="img/team1.jpg" alt="ريم حشمة" class="team-card__image">
+            </div>
+            <h3 class="team-card__name">ريم حشمة</h3>
+            <div class="team-card__role">مصممة الواجهة</div>
+            <p class="team-card__description">
+              متخصصة في تصميم تجارب المستخدم والواجهات، تعمل على جعل المنصة سهلة الاستخدام وجميلة للمستخدمين.
+            </p>
+          </div>
+
+          <!-- عضو الفريق 2 -->
+          <div class="team-card">
+            <div class="team-card__image-container">
+              <img src="img/team2.jpg" alt="ريان الشاهين" class="team-card__image">
+            </div>
+            <h3 class="team-card__name">ريان الشاهين</h3>
+            <div class="team-card__role">مبرمج الواجهة</div>
+            <p class="team-card__description">
+              مطور واجهات أمامية بخبرة في أحدث تقنيات الويب، يعمل على تحويل التصاميم إلى تجارب تفاعلية سلسة.
+            </p>
+          </div>
+
+          <!-- عضو الفريق 3 -->
+          <div class="team-card">
+            <div class="team-card__image-container">
+              <img src="img/team3.jpg" alt="عبد الهادي بنيان" class="team-card__image">
+            </div>
+            <h3 class="team-card__name">عبد الهادي بنيان</h3>
+            <div class="team-card__role">مبرمج الواجهة</div>
+            <p class="team-card__description">
+              مبرمج متخصص في تطوير الواجهات بتقنيات حديثة، يحرص على تقديم أفضل أداء وتجربة للمستخدم.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- قسم كيفية إضافة فعالية -->
+      <div class="how-to-add">
+        <h2 class="how-to-add__title">كيفية إضافة فعالية</h2>
+        <p class="how-to-add__text">
+          نرحب بجميع الجمعيات والمبادرات والأفراد للمساهمة في إثراء محتوى المنصة من خلال إضافة فعالياتهم. 
+          نضمن نشر الفعاليات بعد مراجعتها والتأكد من صحتها ومناسبتها لأهداف المنصة.
+        </p>
+
+        <div class="how-to-add__steps">
+          <!-- خطوة 1 -->
+          <div class="how-to-add__step">
+            <div class="how-to-add__step-number">1</div>
+            <h3 class="how-to-add__step-title">تقديم الطلب</h3>
+            <p class="how-to-add__step-description">
+              املأ نموذج إضافة الفعالية من خلال صفحة "اتصل بنا" مع تقديم جميع المعلومات المطلوبة.
+            </p>
+          </div>
+
+          <!-- خطوة 2 -->
+          <div class="how-to-add__step">
+            <div class="how-to-add__step-number">2</div>
+            <h3 class="how-to-add__step-title">المراجعة</h3>
+            <p class="how-to-add__step-description">
+              يقوم فريقنا بمراجعة طلبك والتحقق من صحة المعلومات ومناسبة الفعالية لمعايير المنصة.
+            </p>
+          </div>
+
+          <!-- خطوة 3 -->
+          <div class="how-to-add__step">
+            <div class="how-to-add__step-number">3</div>
+            <h3 class="how-to-add__step-title">النشر</h3>
+            <p class="how-to-add__step-description">
+              بعد الموافقة، سيتم نشر فعاليتك على المنصة ليتمكن الجمهور من الاطلاع عليها والمشاركة فيها.
+            </p>
+          </div>
+
+          <!-- خطوة 4 -->
+          <div class="how-to-add__step">
+            <div class="how-to-add__step-number">4</div>
+            <h3 class="how-to-add__step-title">المتابعة</h3>
+            <p class="how-to-add__step-description">
+              يمكنك متابعة تفاعل الجمهور مع فعاليتك وتحديث المعلومات عند الحاجة عبر التواصل معنا.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="contact.html" class="events-page__btn-details" style="display: inline-block; padding: 12px 30px;">
+            أضف فعاليتك الآن
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 بوابة فعالية دمشق - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

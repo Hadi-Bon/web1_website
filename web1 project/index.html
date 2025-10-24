@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>بوابة فعالية دمشق</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+
+<header class="site-header">
+  <nav id="mainNav" class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+
+      <!-- الشعار + الاسم -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="img/logo.png" alt="DEG" class="logo">
+        <div class="brand-text">
+          <div class="deg">D&nbsp;&nbsp;E&nbsp;&nbsp;G</div>
+          <div class="site-name">بوابة فعالية دمشق</div>
+        </div>
+      </a>
+
+      <!-- زر القائمة في الموبايل -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- القوائم -->
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav gap-3 text-center">
+          <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- قسم الأزرار الجانبية -->
+      <div class="d-flex align-items-center gap-3">
+
+        <!-- زر تبديل الوضع Light/Dark -->
+        <button id="modeToggle" class="mode-toggle" title="تبديل الوضع">🌙</button>
+
+        <!-- أزرار اللغة -->
+<div class="lang-switch d-flex align-items-center">
+  <button class="flag-btn" data-lang="ar" id="flag-sy" title="العربية">
+    <img src="img/Flag-Syria.png" alt="العربية">
+  </button>
+  <button class="flag-btn" data-lang="en" id="flag-us" title="English">
+    <img src="img/Flag-United-States-of-America.png" alt="English">
+  </button>
+</div>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+    <!-- HERO / BANNER -->
+  <main>
+    <!-- HERO / BANNER -->
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+  <!-- صورة اليد خارج الـcontainer -->
+  <div class="hero-hand-outer">
+    <img src="img/hand.png" alt="صورة اليد" class="hero-hand">
+  </div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center">
+      
+      <!-- النصوص -->
+      <div class="col-lg-6 text-area">
+        <h1 class="hero-title">بوابة فعالية دمشق</h1>
+        <p class="hero-sub">
+          المنصة التي تجمع المبادرات والفعاليات الإنسانية في مكان واحد. شارك، تبرع، وكن جزءًا من صناعة الأثر في مجتمعك.
+        </p>
+        <a href="events.html" class="btn-cta" id="cta-btn">دمشق تحتاجك</a>
+      </div>
+
+      <!-- صورة اليد -->
+      <!-- صورة اليد -->
+<!-- <div class="col-lg-6 d-flex justify-content-start">
+  <div class="hero-image-wrapper edge-image left-side">
+    <img src="img/hand.png" alt="صورة اليد" class="hero-image">
+  </div>
+</div> -->
+
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- (باقي محتوى الصفحة سيُبنى لاحقًا: سلايدر، حدث اليوم، أحدث الفعاليات...) -->
+
+
+
+<!-- ===== قسم أبرز الفعاليات ===== -->
+<section class="featured-events" id="featured-events">
+  <div class="container">
+    <h2 class="section-title">أبرز الفعاليات</h2>
+
+    <div class="slider-container">
+      <button class="arrow prev" id="prevBtn">&#10094;</button>
+
+      <div class="cards-wrapper">
+
+        <!-- 1️⃣ بازار دمشق للأمل -->
+        <div class="event-card" data-event="bazaar">
+          <img src="img/bazar_photo.png" alt="بازار دمشق للأمل">
+          <h3 class="event-title">بازار دمشق للأمل</h3>
+          <p class="event-desc">معرض خيري لمنتجات حرفية وبيتية لدعم العائلات المتضررة.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 2️⃣ إعادة تشجير الغوطة -->
+        <div class="event-card" data-event="trees">
+          <img src="img/tree.png" alt="إعادة تشجير الغوطة">
+          <h3 class="event-title">إعادة تشجير الغوطة</h3>
+          <p class="event-desc">يوم تطوعي لزراعة الأشجار في المناطق المتضررة.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 3️⃣ مهرجان الأطفال للسلام -->
+        <div class="event-card" data-event="children">
+          <img src="img/kids_photo.png" alt="مهرجان الأطفال للسلام">
+          <h3 class="event-title">مهرجان الأطفال للسلام</h3>
+          <p class="event-desc">نشاط ترفيهي وتعليمي للأطفال مع ألعاب ومسابقات رسم.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 4️⃣ ترميم المدارس -->
+        <div class="event-card" data-event="schools">
+          <img src="img/school_photo.png" alt="ترميم المدارس">
+          <h3 class="event-title">ترميم المدارس</h3>
+          <p class="event-desc">طلاب الجامعات يشاركون بإصلاح المقاعد والدهان في مدارس دمشق.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 5️⃣ سوق رمضان الخيري -->
+        <div class="event-card" data-event="ramadan">
+          <img src="img/ramadan_photo.png" alt="سوق رمضان الخيري">
+          <h3 class="event-title">سوق رمضان الخيري</h3>
+          <p class="event-desc">بازار في باب توما لدعم الأسر قبيل العيد.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 6️⃣ معرض صور دمشق تنهض -->
+        <div class="event-card" data-event="photos">
+          <img src="img/Ma3ra_photo.png" alt="معرض صور دمشق تنهض">
+          <h3 class="event-title">معرض صور دمشق تنهض</h3>
+          <p class="event-desc">صور فوتوغرافية قبل وبعد التحرير تُعرض في ساحة عامة.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 7️⃣ حملة كتاب لكل بيت -->
+        <div class="event-card" data-event="books">
+          <img src="img/book_photo.png" alt="كتاب لكل بيت">
+          <h3 class="event-title">كتاب لكل بيت</h3>
+          <p class="event-desc">توزيع كتب مستعملة وجديدة لدعم الثقافة في المجتمع.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 8️⃣ اليوم المفتوح للجامعات -->
+        <div class="event-card" data-event="universities">
+          <img src="img/UN_photo.png" alt="اليوم المفتوح للجامعات">
+          <h3 class="event-title">اليوم المفتوح للجامعات</h3>
+          <p class="event-desc">استقبال الأهالي والطلاب الجدد لتعريفهم بفرص التعليم.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 9️⃣ مهرجان الطعام الدمشقي -->
+        <div class="event-card" data-event="food">
+          <img src="img/damas_photo.png" alt="مهرجان الطعام الدمشقي">
+          <h3 class="event-title">مهرجان الطعام الدمشقي</h3>
+          <p class="event-desc">تذوق أكلات شعبية تقليدية مع عروض فلكلورية.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+        <!-- 🔟 مبادرة شارع نظيف -->
+        <div class="event-card" data-event="clean">
+          <img src="img/Tato3.png" alt="مبادرة شارع نظيف">
+          <h3 class="event-title">مبادرة شارع نظيف</h3>
+          <p class="event-desc">تنظيف وتجميل أحياء دمشق القديمة بمشاركة الأهالي.</p>
+          <a href="events.html" class="discover-btn">اكتشف الفعالية</a>
+        </div>
+
+      </div>
+
+      <button class="arrow next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <div class="dots-container" id="sliderDots"></div>
+  </div>
+</section>
+
+
+
+<!-- قسم حدث اليوم  -->
+
+<section class="today-event" id="today-event">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="today-title">حدث اليوم</h2>
+    </div>
+
+    <div class="today-card">
+      <div class="badge-today">حدث اليوم</div>
+      <div class="today-image">
+        <img src="img/live photo.jpg" alt="إعادة تشجير الغوطة">
+      </div>
+
+      <div class="today-content">
+        <h3 class="event-name">إعادة تشجير الغوطة</h3>
+        <p class="event-location">ريف دمشق – الغوطة الشرقية</p>
+        <p class="event-date">13 تشرين الأول 2025</p>
+        <a href="event.html" class="btn-today">تفاصيل الفعالية</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ========== قسم أحدث الفعاليات ========== -->
+<section class="latest-events" id="latest-events">
+  <div class="container">
+    <h2 class="section-title">أحدث الفعاليات</h2>
+
+    <!-- شريط البحث والفلترة -->
+    <div class="filter-bar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="ابحث عن فعالية...">
+        <button id="searchBtn">🔍</button>
+      </div>
+
+      <div class="filters">
+        <select id="filterType">
+          <option value="all">كل الأنواع</option>
+          <option value="خيري">خيري</option>
+          <option value="تطوعي">تطوعي</option>
+          <option value="ثقافي">ثقافي</option>
+          <option value="بيئي">بيئي</option>
+        </select>
+
+        <select id="filterDate">
+          <option value="all">كل التواريخ</option>
+          <option value="2025-10">تشرين الأول 2025</option>
+          <option value="2025-11">تشرين الثاني 2025</option>
+          <option value="2025-12">كانون الأول 2025</option>
+        </select>
+
+        <select id="filterLocation">
+          <option value="all">كل الأماكن</option>
+          <option value="دمشق">دمشق</option>
+          <option value="ريف دمشق">ريف دمشق</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- شبكة الفعاليات -->
+    <div class="latest-grid">
+      <div class="latest-card" data-event="bazaar" data-type="خيري" data-location="دمشق" data-date="2025-10">
+        <img src="img/bazar.jpg" alt="بازار الأمل">
+        <h3 class="latest-title">بازار دمشق للأمل</h3>
+        <p class="latest-desc">دمشق – 10 تشرين الأول 2025</p>
+        <span class="latest-badge">خيري</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="trees" data-type="بيئي" data-location="ريف دمشق" data-date="2025-10">
+        <img src="img/live photo.jpg" alt="تشجير الغوطة">
+        <h3 class="latest-title">إعادة تشجير الغوطة</h3>
+        <p class="latest-desc">ريف دمشق – 13 تشرين الأول 2025</p>
+        <span class="latest-badge">بيئي</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="photos" data-type="ثقافي" data-location="دمشق" data-date="2025-10">
+        <img src="img/photo_damas.jpeg" alt="دمشق تنهض">
+        <h3 class="latest-title">معرض صور دمشق تنهض</h3>
+        <p class="latest-desc">دمشق – 15 تشرين الأول 2025</p>
+        <span class="latest-badge">ثقافي</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="schools" data-type="تطوعي" data-location="دمشق" data-date="2025-11">
+        <img src="img/schools_rebulid.png" alt="ترميم المدارس">
+        <h3 class="latest-title">يوم تطوعي لترميم المدارس</h3>
+        <p class="latest-desc">دمشق – 5 تشرين الثاني 2025</p>
+        <span class="latest-badge">تطوعي</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="books" data-type="ثقافي" data-location="دمشق" data-date="2025-11">
+        <img src="img/book.jpg" alt="كتاب لكل بيت">
+        <h3 class="latest-title">حملة كتاب لكل بيت</h3>
+        <p class="latest-desc">دمشق – 9 تشرين الثاني 2025</p>
+        <span class="latest-badge">ثقافي</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="ramadan" data-type="خيري" data-location="دمشق" data-date="2025-11">
+        <img src="img/ramadan.png" alt="سوق رمضان">
+        <h3 class="latest-title">سوق رمضان الخيري</h3>
+        <p class="latest-desc">دمشق – 18 تشرين الثاني 2025</p>
+        <span class="latest-badge">خيري</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="clean" data-type="تطوعي" data-location="دمشق" data-date="2025-10">
+        <img src="img/clean.png" alt="شارع نظيف">
+        <h3 class="latest-title">مبادرة شارع نظيف</h3>
+        <p class="latest-desc">دمشق القديمة – 22 تشرين الأول 2025</p>
+        <span class="latest-badge">تطوعي</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="universities" data-type="ثقافي" data-location="دمشق" data-date="2025-12">
+        <img src="img/un.jpg" alt="يوم الجامعات">
+        <h3 class="latest-title">اليوم المفتوح للجامعات</h3>
+        <p class="latest-desc">دمشق – 1 كانون الأول 2025</p>
+        <span class="latest-badge">ثقافي</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="food" data-type="خيري" data-location="دمشق" data-date="2025-12">
+        <img src="img/food.jpg" alt="معرض خيري">
+        <h3 class="latest-title">مهرجان الطعام الدمشقي</h3>
+        <p class="latest-desc">باب توما – 10 كانون الأول 2025</p>
+        <span class="latest-badge">خيري</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+
+      <div class="latest-card" data-event="kids" data-type="خيري" data-location="ريف دمشق" data-date="2025-12">
+        <img src="img/kids.jpg" alt="أطفال">
+        <h3 class="latest-title">مهرجان الأطفال للسلام</h3>
+        <p class="latest-desc">ريف دمشق – 22 كانون الأول 2025</p>
+        <span class="latest-badge">خيري</span>
+        <a href="events.html" class="latest-btn">تفاصيل</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== قسم من نحن ========== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <h2 class="section-title">من نحن</h2>
+    <p class="about-text">
+      بوابة فعالية دمشق هي منصة مجتمعية تهدف إلى توثيق ومشاركة الفعاليات 
+      الخيرية والتطوعية والثقافية في دمشق، لتعزيز روح التعاون والمشاركة بين الأفراد والجمعيات.
+    </p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <h3 class="team-name">ريم حشمة</h3>
+        <p class="team-role">مصممة الواجهة</p>
+        <p class="team-role"> reem_283489</p>
+
+      </div>
+
+      <div class="team-card">
+        <h3 class="team-name">ريان شاهين</h3>
+        <p class="team-role">مبرمجة الواجهة</p>
+        <p class="team-role"> rayan_283043</p>
+
+      </div>
+
+      <div class="team-card">
+        <h3 class="team-name">عبد الهادي بنيان</h3>
+        <p class="team-role">مبرمج الواجهة</p>
+        <p class="team-role">abd_alhadi_283008</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Bootstrap JS bundle (incl. Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="js/main.js"></script>
+
+
+</body>
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+  <div class="container">
+
+    <!-- الشعارات في المنتصف -->
+    <div class="footer-logos">
+      <img src="img/logo.png" alt="شعار بوابة فعالية دمشق" class="footer-logo-main">
+      <img src="img/SY-logo.png" alt="شعار الجمهورية العربية السورية" class="footer-logo-syria">
+    </div>
+
+    <!-- روابط التصفح -->
+    <ul class="footer-links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#latest-events">الفعاليات</a></li>
+      <li><a href="#about">عن الموقع</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+    </ul>
+
+    <!-- أيقونات التواصل الاجتماعي -->
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- الخط السفلي -->
+    <div class="footer-bottom">
+      <p>© 2025 بوابة فعالية دمشق (DEG) — بإشراف الجمهورية العربية السورية 🇸🇾</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
